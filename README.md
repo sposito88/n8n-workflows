@@ -1,63 +1,53 @@
-# 🧠 n8n Workflow Collection
+## 🧠 Coleção de Workflows n8n
+Este repositório contém uma coleção de workflows do n8n reunidos de várias fontes, incluindo:
 
-This repository contains a collection of **n8n workflows** gathered from multiple sources, including:
+Workflows exportados do site n8n.io e do fórum da comunidade
 
-* Workflows exported from the [n8n.io](https://n8n.io) website and community forum
-* Publicly shared examples found across the web (GitHub, blogs, etc.)
+Exemplos compartilhados publicamente encontrados pela web (GitHub, blogs, etc.)
 
-The goal is to provide a useful resource for inspiration, learning, and reuse in your own n8n projects.
+O objetivo é fornecer um recurso útil para inspiração, aprendizado e reutilização em seus próprios projetos com o n8n.
 
----
+## 📂 Estrutura de Pastas
+Cada arquivo .json representa um workflow exportado individualmente.
 
-## 📂 Folder Structure
+Os arquivos são nomeados com base no título original ou na fonte de origem.
 
-* Each `.json` file represents a single exported workflow.
-* Files are named either based on their original title or source.
-* You may also find `.txt` files that were converted into `.json` (see below).
+Você também pode encontrar arquivos .txt que foram convertidos para .json (veja abaixo).
 
----
+## 🔄 Conversão de TXT para JSON
+Alguns workflows foram originalmente salvos como arquivos .txt ou copiados de fontes online. Um script foi utilizado para:
 
-## 🔄 TXT to JSON Conversion
+Detectar arquivos .txt
 
-Some workflows were originally saved as `.txt` files or copied from online sources. A script was used to:
+Tentar interpretá-los como JSON ou pares chave-valor estruturados
 
-* Detect `.txt` files
-* Attempt to parse them as JSON or structured key-value pairs
-* Convert them to valid `.json` format
+Convertê-los para o formato .json válido
 
-If you’re looking to run the conversion yourself, check out `convert_txt_to_json.py` included in this repo.
+Se quiser executar a conversão por conta própria, confira o arquivo convert_txt_to_json.py incluído neste repositório.
 
----
+## 🛠 Instruções de Uso
+Para importar um workflow na sua própria instância do n8n:
 
-## 🛠 Usage Instructions
+Abra a sua Interface do Editor do n8n
 
-To import a workflow into your own n8n instance:
+Clique no menu (☰) no canto superior direito → Importar workflow
 
-1. Open your [n8n Editor UI](https://docs.n8n.io/hosting/editor-ui/)
-2. Click on the **menu** (☰) in the top right → `Import workflow`
-3. Choose a `.json` file from this folder
-4. Click "Import" to load the workflow
+Escolha um arquivo .json desta pasta
 
-Make sure to review and modify credentials or webhook URLs as needed before running.
+Clique em "Importar" para carregar o workflow
 
----
+Certifique-se de revisar e modificar as credenciais ou URLs de webhook conforme necessário antes de executar.
 
-## 🤝 Contribution
+## 🤝 Contribuição
+Encontrou um workflow interessante ou criou o seu próprio?
+Sinta-se à vontade para contribuir adicionando-o a esta coleção!
 
-Found a cool workflow or created your own?
-Feel free to contribute by adding it to this collection!
+Apenas certifique-se de:
 
-Just make sure to:
+Nomear o arquivo de forma descritiva
 
-* Name the file descriptively
-* Include a short comment at the top with the original source if applicable
+Incluir um breve comentário no topo com a fonte original, se aplicável
 
----
-
-## ⚠️ Disclaimer
-
-All workflows here are shared **as-is**.
-Always inspect and test them in a safe environment before using them in production.
-
----
-
+## ⚠️ Aviso
+Todos os workflows aqui são compartilhados como estão.
+Sempre inspecione e teste em um ambiente seguro antes de usá-los em produção.
